@@ -1,0 +1,53 @@
+/*sign up*/
+*{margin:0;padding:0}
+body{
+	background: rgb(36,0,3);
+	background: linear-gradient(90deg, rgba(36,0,3,1) 0%, rgba(228,99,201,1) 20%, rgba(115,113,228,0.5858718487394958) 76%);
+	margin:20px auto;
+	
+}
+
+.card{
+	height:600px;
+	width:560px;
+	background-color: rgba(0,0,0,0.5) !important;
+}
+.divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.divider-text span {
+    padding: 7px;
+    font-size: 12px;
+    position: relative;   
+    z-index: 2;
+}
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+h4,p{
+	color:white;
+}
+.btn{
+	color:white;
+}
+.btn-face{
+	background:#405D9D;
+}
+.btn-face:hover{
+	color:blue;
+}
+.btn-twit:hover{
+	color:blue;
+}
+.btn-twit{
+	background:#42AEEC;
+}

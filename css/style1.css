@@ -1,0 +1,327 @@
+*{
+	margin:0;
+	padding:0;
+}
+.slider{
+	width:700px;
+	height:550px;
+	margin:0 auto;
+}
+.card-img-top{
+	margin:auto;
+	height:250px!important;
+	width:300px!important;
+}
+h3{
+	margin-top:10px;
+	font-family: 'Roboto', sans-serif;
+	font-size:22px;
+	line-height:30px;
+	font-weight:600;
+	color:#ff4500;
+}
+figure img{
+	transition: all .5s;
+    margin-left: 12px;
+}
+figure:hover img{
+	transform: scale(1.1);
+}
+.carousel-item img{
+	height:500px;
+	width:1600px;
+}
+.owl-carousel .item:hover{
+	width:300px;
+}
+.card-img,.cart-caption{
+	position:relative;
+	overflow:hidden;
+}
+
+.card-img::before{
+	position:absolute;
+	content:'';
+	width:100%;
+	background:grey;
+	top:-50%;
+	left:-100%;
+	z-index:1;
+	transform:rotate(25deg);
+	transform-origin:center top 0;
+	transition:0.5s;
+}
+.card-img:hover:before{
+	left:10%;
+}
+.card-img img{
+	width:100%;
+	height:auto;
+}
+.card-icon1{
+	width:100%;
+	position:absolute;
+	top:28%;
+	color:red;
+	left:-20%;
+	z-index:2;
+	transition:1s;
+	visibility:hidden;
+	padding:3px;
+}
+.card-icon2{
+	width:100%;
+	position:absolute;
+	top:45%;
+	color:red;
+	left:-20%;
+	z-index:2;
+	transition:0.7s;
+	visibility:hidden;
+}
+
+.cart-caption{
+	width:90%;
+	position:absolute;
+	top:85%;
+	color:white;
+	left:-20%;
+	z-index:2;
+	transition:0.6s;
+	visibility:hidden;
+	background:blue;
+	padding:10px;
+}
+.card-img:hover .card-icon1{
+	left:10px;
+	visibility:visible;
+}
+.card-img:hover .card-icon2{
+	left:13px;
+	visibility:visible;
+}
+.card-img:hover .cart-caption{
+	left:10px;
+	visibility:visible;
+}
+.card .fa-buffer ,.fa-heart{
+	background:grey;
+	padding:13px;
+}
+.leadtek-catagory h3,.intel-catagory h3,.Latest-product h3{
+	padding:3px;
+	border-bottom:2px solid orange;
+}
+.img-fluid{
+	width:100%;
+	background:center;
+	height:550px;
+}
+.other-products-catagory ul li{
+	list-style:none;
+}
+.other-products-catagory ul li a{
+	text-decoration:none;
+	
+}
+.other-products-catagory ul li a:hover{
+	color:#FE5A1D;
+}
+
+/*parallax*/
+/* Hides the horizontal overflow */
+
+/* Resize in Mobile View */
+
+@media (min-width: 0) and (max-width: 767px) {
+  p, .body-text {
+    font-size: 10px !important;
+  }
+  .down-arrow {
+    font-size: 20px !important;
+  }
+}
+/* Resize in Tablet View */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  p, .body-text {
+    font-size: 15px !important;
+  }
+  .down-arrow {
+    font-size: 30px !important;
+  }
+}
+/* Line Separators CSS */
+
+
+/* First Wrap Background */
+
+.first-wrap {
+  height: 100%;
+  width: 100vw;
+  background: #ffffff url("https://img.cinemablend.com/filter:scale/quill/c/4/9/d/c/6/c49dc618b6260f6404a7c38ec8c3671b23b4b4d9.jpg?fw=1200") no-repeat fixed;
+   background-size: cover;
+   background-position: 50% 50%;
+}
+
+.first-div {
+  position: relative;
+  height: 60vh;
+  width: 100vw;
+  background-color: transparent;
+  
+   
+}
+.first-inner-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    
+}
+.down-arrow {
+	font-size: 40px;
+	color: #fff;
+  }
+.hot-product-image img{
+	height:300px;
+	width:auto;
+}
+.hot-product-image2 img{
+	height:300px;
+	width:200px;
+	text-align:center;
+}
+.hot-product-image3 img{
+	height:300px;
+	width:140px;
+	text-align:center;
+}
+.provided-company-image img{
+	height:100px;
+	width:150px;
+}
+.border{
+	border-bottom:1px solid #b2bec3;
+}
+.footer-icon .fab{
+	padding:5px;
+	font-size:30px;
+	color:#b2bec3;
+	transition:0.5s;
+}
+.footer-icon .fab:hover{
+	color:#D9811D;
+}
+
+.footer-icon .fas{
+	float:right;
+	padding:5px;
+	font-size:30px;
+	color:#b2bec3;
+	transition:0.5s;
+}
+.footer-icon .fas:hover{
+	color:#D9811D;
+}
+
+
+.dropdown-menu {
+	min-width: 200px;
+}
+.dropdown-menu.columns-2 {
+	min-width: 400px;
+}
+.dropdown-menu.columns-3 {
+	min-width: 600px;
+}
+.dropdown-menu li a {
+	padding: 5px 15px;
+	font-weight: 300;
+}
+.multi-column-dropdown {
+	list-style: none;
+}
+.multi-column-dropdown li a {
+	display: block;
+	clear: both;
+	line-height: 1.428571429;
+	color: #333;
+	white-space: normal;
+}
+.multi-column-dropdown li a:hover {
+	text-decoration: none;
+	color: #262626;
+	background-color: #f5f5f5;
+}
+ 
+@media (max-width: 767px) {
+	.dropdown-menu.multi-column {
+		min-width: 240px !important;
+		overflow-x: hidden;
+	}
+}
+/* Fixed sidenav, full height */
+.sidenav {
+    height: 100%;
+    width: 300px;
+    z-index: 1;
+    top: 23%;
+    left: 0;
+    background-color: #343A40;
+    overflow-x: hidden;
+    padding-top: 20px;
+  
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Main content */
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .owl-carousel .active {
+	  color: #000;
+  }
+  .owl-carousel .active {
+    background-color: green;
+    
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
